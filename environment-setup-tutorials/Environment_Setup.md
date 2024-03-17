@@ -1,6 +1,6 @@
 # Environment setup on Microsoft Windows
-### Setup VirtualBox
-#### Download and install
+## Setup VirtualBox
+### Download and install
 Download xubuntu ISO image (version LTS 22.04) from [https://xubuntu.org/download/](https://xubuntu.org/download/)
 Download Oracle VirtualBox from [https://www.virtualbox.org/](https://www.virtualbox.org/) and install it.
 - After VirtualBox installation finished, open the VirtualBox Manager
@@ -13,7 +13,7 @@ Download Oracle VirtualBox from [https://www.virtualbox.org/](https://www.virtua
 - Hardware, assign 2 - 4 Processors, assign 2GB to 4GB *Base Memory*. Leave *Enable EFI* unchecked. Next
 - Virtual Hard Disk, default 25GB harddisk space is fine. Next and Finish
 
-#### VirtualBox Settings
+### VirtualBox Settings
 Now you will see your named VM at the left panel. Select it and click the yellow gear *Settings* button
 - In General > Advanced. Change the Snapshot Folder if you want. It's where your snapshot image file is saved for your newly created VM
 - In System, you can adjust your *Base Memory* in Motherboard tab and number of *Proccessors* in Processor tab
@@ -22,7 +22,7 @@ Now you will see your named VM at the left panel. Select it and click the yellow
 Click OK button and then green arrow Start button.
 When GNU GRUB menu popup (in black screen), choose *Try or Install Xubuntu*
 
-#### xubuntu install & setup
+### xubuntu install & setup
 - Choose *Install Xubuntu*
 - Choose the right keyboard or leave it default. Continue
 - Choose *Minimal installation*, uncheck all options. Continue
@@ -41,8 +41,8 @@ sudo ./VBoxLinuxAdditions.run
 ```
 - After installed the modules, restart the system.
 ---
-### Installing programs
-#### nvm and node
+## Installing programs
+### nvm and node
 - Install curl
 ```sh
 sudo apt install curl
@@ -62,7 +62,7 @@ nvm ls-remote
 nvm install v20.11.1
 ```
 >To verify the successful installation of node, run "node" to get into node shell. Use Control-D to quit node shell.
-#### Install rust toolchain for running Solana program
+### Install rust toolchain for running Solana program
 - Find the following command in [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install). Run :
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -75,12 +75,12 @@ rustc -V
 ```sh
 cargo -V
 ```
-#### Install Git for version control
+### Install Git for version control
 ```sh
 sudo apt install git
 ```
 If installation success, run *git* will show git help
-#### Install IDE : VS Code
+### Install IDE : VS Code
 - Download Debian / Ubuntu version from [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 - Go to */Download* directory, there should be a file something like **code_1.87.2-1709912201_amd64.deb**
 - Install vscode :
@@ -88,7 +88,7 @@ If installation success, run *git* will show git help
  sudo dpkg -i code_1.87.2-1709912201_amd64.deb
  ```
 - After installation success, you should be able to run vscode in system menu.
-#### System upgrade
+### System upgrade
 - Update all available upgrades for the whole system
 ```sh
 sudo apt update
@@ -102,13 +102,13 @@ apt list --upgradable
 sudo apt upgrade
 ```
 ---
-### Install CLI
+## Install CLI
 Find the following command in [https://docs.solanalabs.com/cli/install](https://docs.solanalabs.com/cli/install) and run :
 ```sh
 sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
 ```
 After installed, relogin to take effect
-#### Create / manage keypair and address
+### Create / manage keypair and address
 - Create new keypair / public address
 ```sh
 solana-keygen new
