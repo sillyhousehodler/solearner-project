@@ -1,8 +1,8 @@
 # Environment setup on Microsoft Windows
 ## Setup VirtualBox
 ### Download and install
-Download xubuntu ISO image (version LTS 22.04) from [https://xubuntu.org/download/](https://xubuntu.org/download/)
-Download Oracle VirtualBox from [https://www.virtualbox.org/](https://www.virtualbox.org/) and install it.
+- Download xubuntu ISO image (version LTS 22.04) from [https://xubuntu.org/download/](https://xubuntu.org/download/)
+- Download Oracle VirtualBox from [https://www.virtualbox.org/](https://www.virtualbox.org/) and install it.
 - After VirtualBox installation finished, open the VirtualBox Manager
 <!-- ![VirtualBox](https://drive.google.com/file/d/1GLH0jaOVHXgdyFN_19wY3Fckqxxe_9FL/view?usp=sharing) -->
 - Click "New" to create VM
